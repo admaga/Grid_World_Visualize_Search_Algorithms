@@ -39,11 +39,11 @@ def aStarButtonPressed():
 def resetWorldButtonPressed():
     for i in range(NUM_ROWS):
         for j in range(NUM_COLS):
-            if i == START_POSITION[0] and j == START_POSITION[1]:
+            if (i,j) == START_POSITION:
                 bgColor = "red"
                 myWorld.world[i][j] = START_CHARACTER
                 myWorld.start = START_POSITION
-            elif i == END_POSITION[0] and j == END_POSITION[1]:
+            elif (i,j) == END_POSITION:
                 bgColor = "blue"
                 myWorld.world[i][j] = END_CHARACTER
                 myWorld.end = END_POSITION
@@ -60,16 +60,16 @@ def clearPathButtonPressed():
             if currentBG == "black":
                 continue
             bgColor = "white"
-            if i == myWorld.start[0] and j == myWorld.start[1]:
+            if (i,j) == myWorld.start:
                 bgColor = "red"
-            if i == myWorld.end[0] and j == myWorld.end[1]:
+            if (i,j) == myWorld.end:
                 bgColor = "blue"
             gridButtons[i][j]["bg"] = bgColor
 
 def randomizeObstaclesButtonPressed():
     for i in range(NUM_ROWS):
         for j in range(NUM_COLS):
-            if (i == myWorld.start[0] and j == myWorld.start[1]) or (i == myWorld.end[0] and j == myWorld.end[1]):
+            if ((i,j) == myWorld.start) or ((i,j) == myWorld.end):
                 continue
             currentBG = gridButtons[i][j]["bg"]
             if currentBG == "yellow":
@@ -146,9 +146,9 @@ def buttonPressed(i, j):
 for i in range(NUM_COLS):
     for j in range(NUM_ROWS):
         bgColor = "white"
-        if i == START_POSITION[0] and j == START_POSITION[1]:
+        if (i,j) == START_POSITION:
             bgColor = "red"
-        if i == END_POSITION[0] and j == END_POSITION[1]:
+        if (i,j) == END_POSITION:
             bgColor = "blue"
         currentButton = tk.Button(frameWorld,
             text="",

@@ -20,12 +20,11 @@ class World(object):
      
     def getNeighbors(self, cell):
         currentRow, currentColumn = cell
-        # Possible direction of agent: up, down, right, left
-        directions = [(-1,0), (1,0), (0,1), (0,-1)]
+        directions = [(-1,0), (1,0), (0,1), (0,-1)]    # Possible direction of agent: up, down, right, left
         for rowIncrement, columnIncrement in directions:
             futureCellRow, futureCellColumn = currentRow + rowIncrement, currentColumn + columnIncrement
-            # If the neighbor is out of the world or if there is an obstacle
-            if ((futureCellRow < 0 or futureCellRow >= self.rows or futureCellColumn < 0 or futureCellColumn >= self.cols) or self.world[futureCellRow][futureCellColumn] == OBSTACLE_CHARACTER):
+            if ((futureCellRow < 0 or futureCellRow >= self.rows or futureCellColumn < 0 or futureCellColumn >= self.cols) 
+            or self.world[futureCellRow][futureCellColumn] == OBSTACLE_CHARACTER):
                 continue
             yield (futureCellRow, futureCellColumn)
     
