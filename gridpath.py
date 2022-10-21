@@ -29,7 +29,7 @@ class World(object):
             yield (futureCellRow, futureCellColumn)
     
     def reachedGoal(self, cell):
-        return self.world[cell[0]][cell[1]] == 9
+        return self.world[cell[0]][cell[1]] == END_CHARACTER
 
     def backtrack(self, cell, movements):
         path = []

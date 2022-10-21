@@ -10,7 +10,7 @@ NUM_ROWS = 20
 START_POSITION = (0,0)
 END_POSITION = (NUM_COLS - 1, NUM_ROWS  -1)
 
-gridButtons = [[0 for i in range(NUM_COLS)] for j in range(NUM_ROWS)]
+gridButtons = [[0 for i in range(NUM_COLS)] for j in range(NUM_ROWS)]    # Matrix of button objects
 myWorld = gridpath.World(copy.deepcopy(gridButtons), START_POSITION, END_POSITION)
 
 def paintCell(cell):
