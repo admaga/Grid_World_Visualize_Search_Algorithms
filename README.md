@@ -16,7 +16,7 @@ Part of an online assessment for a software development position was to program 
 
 The program will create a world of 20x20 buttons. Red button is initial state, blue button is goal state and black buttons are obstacles. After selecting an algorithm, if a path is found, it will be highlighted yellow in the world in order to visualize it. The initial and goal states can be moved around the world. The application allows to place obstacles around the grid on demand by clicking non-terminal states or also you can choose to automatically place obstacles in random locations.
 
-![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/93f1f08624f6d3aee100e4cccb11a6917e54cb8a/img/pathfinder.jpg)
+![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/e2e2b4ff8c556662e99035007d6bc6fbf27e9fb8/img/pathfinder.jpg)
 
 ## Usage
 Run ``gridpath_gui.py`` to start the GUI
