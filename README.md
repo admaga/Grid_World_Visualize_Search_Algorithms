@@ -21,7 +21,7 @@ The program will create a world of 20x20 buttons. Red button is initial state, b
 ## Usage
 Run ``gridpath_gui.py`` to start the GUI
 
-![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/0fbe754ea020141d402e93d5d43737d93552cf22/img/mainscreen.png)
+![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/09d94eba758945728e959074e0cb91b5524e3ff6/img/Mainscreen.jpg)
 
 Select the initial state, click on randomize obstacles and select the algorithm you want to visualize!
 
