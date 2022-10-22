@@ -23,7 +23,11 @@ Run ``gridpath_gui.py`` to start the GUI
 
 ![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/09d94eba758945728e959074e0cb91b5524e3ff6/img/Mainscreen.jpg)
 
-Select the initial state, click on randomize obstacles and select the algorithm you want to visualize!
+Position the initial state.
+
+Click on randomize obstacles.
+
+Select the algorithm you want to visualize!
 
 ![Image text](https://github.com/admaga/Search_Algorithm_Visualizer/blob/93f1f08624f6d3aee100e4cccb11a6917e54cb8a/img/astargif.gif)
 
